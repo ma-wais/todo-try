@@ -21,7 +21,7 @@ app.use (cors({
 app.use("/api/v1/users", userRouter)
 app.use("/api/v1/task",taskRouter)
 
-mongoose.connect("mongodb://127.0.0.1:27017", {
+mongoose.connect("mongodb+srv://awais:fortnite123@cluster0.qtjbmr8.mongodb.net/", {
       dbName: "backendapi",
     }).then(() => console.log("Database Connected")).catch((e) => console.log(e));
 
